@@ -42,8 +42,8 @@ export default function SignUpPage() {
         <MyWalletLogo />
         <input placeholder="Nome" type="text" required value={name} onChange={e => setName(e.target.value)} />
         <input placeholder="E-mail" type="email" required value={email} onChange={e => setEmail(e.target.value)} />
-        <input placeholder="Senha" type="password" autocomplete="new-password" required value={password} onChange={e => setPassword(e.target.value)} />
-        <input placeholder="Confirme a senha" type="password" autocomplete="new-password" required value={password1} onChange={e => setPassword1(e.target.value)} />
+        <input placeholder="Senha" type="password" autoComplete="new-password" required value={password} onChange={e => setPassword(e.target.value)} />
+        <input placeholder="Confirme a senha" type="password" autoComplete="new-password" required value={password1} onChange={e => setPassword1(e.target.value)} />
         <button>Cadastrar</button>
       </form>
 
