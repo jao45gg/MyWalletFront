@@ -25,14 +25,13 @@ export default function SignUpPage() {
     })
       .then(() => navigate("/"))
       .catch(err => {
-        if (err.response.data) {
+        if (Array.isArray(err.response.data)) {
           err.response.data.forEach(element => {
             alert(element);
           });
         } else {
-          alert(err.message);
+          alert(err.response.data);
         }
-        console.log(err);
       })
   }
 

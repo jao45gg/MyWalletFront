@@ -2,14 +2,22 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import MyWalletLogo from "../components/MyWalletLogo";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function SignInPage() {
 
+  const navigate = useNavigate();
+
+  useEffect(() => {
+
+    const token = localStorage.getItem("token");
+    if (token) navigate("/home");
+
+  });
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
 
   function signIn(e) {
 
@@ -19,16 +27,18 @@ export default function SignInPage() {
       email: email,
       password: password
     })
-      .then(() => navigate("/home"))
+      .then(res => {
+        localStorage.setItem("token", res.data);
+        navigate("/home");
+      })
       .catch(err => {
-        if (err.response.data) {
+        if (Array.isArray(err.response.data)) {
           err.response.data.forEach(element => {
             alert(element);
           });
         } else {
-          alert(err.message);
+          alert(err.response.data);
         }
-        console.log(err);
       })
   }
 

@@ -1,8 +1,20 @@
-import styled from "styled-components"
-import { BiExit } from "react-icons/bi"
-import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai"
+import styled from "styled-components";
+import { BiExit } from "react-icons/bi";
+import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function HomePage() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+
+    const token = localStorage.getItem("token");
+    if (!token) navigate("/");
+
+  })
+
   return (
     <HomeContainer>
       <Header>
