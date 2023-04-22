@@ -52,7 +52,7 @@ export default function SignInPage() {
       </form>
 
       <Link to={"/cadastro"}>
-        Primeira vez? Cadastre-se!
+        <h2>Primeira vez? Cadastre-se!</h2>
       </Link>
     </SingInContainer>
   )
