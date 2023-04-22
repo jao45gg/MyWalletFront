@@ -3,15 +3,23 @@ import styled from "styled-components";
 import MyWalletLogo from "../components/MyWalletLogo";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function SignUpPage() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+
+    const token = localStorage.getItem("token");
+    if (token) navigate("/home");
+
+  });
 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [password1, setPassword1] = useState("");
-  const navigate = useNavigate();
 
   function signUp(e) {
 
