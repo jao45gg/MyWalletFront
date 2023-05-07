@@ -43,12 +43,16 @@ The following tools and frameworks were used in the construction of the project,
 ```bash
 npm i
 ```
-3. Run the front-end with
+3. Create a .env file on the root of the project with the following variable on it
+```bash
+REACT_APP_API_URL=https://yourBackEndLink:PORT
+```
+4. Run the front-end with
 ```bash
 npm start
 ```
-4. You can optionally build the project running
+5. You can optionally build the project running
 ```bash
 npm run build
 ```
-5. Finally access http://localhost:3000 on your favorite browser (unless it is Internet Explorer. In this case, review your life decisions)g
+6. Finally access http://localhost:3000 on your favorite browser (unless it is Internet Explorer. In this case, review your life decisions)g
