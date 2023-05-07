@@ -8,7 +8,7 @@ Try it out now at https://my-wallet-front-jao45gg.vercel.app
 
 ## About
 
-This is the Front-end of an web application for mobile where lots of people can manage their money. Below are the implemented features:
+This is the Front-end of my first full-stack web application with data persistence. It's mainly mobile and made to manage money. Below are the implemented features:
 
 - Sign Up
 - Login
@@ -19,7 +19,7 @@ This is the Front-end of an web application for mobile where lots of people can 
 By using this app any user can keep track of their money !
 
 ## Technologies
-The following tools and frameworks were used in the construction of the project:<br>
+The following tools and frameworks were used in the construction of the project, you can find the full list on the package.json:<br>
 <p>
   <img style='margin: 5px;' src='https://img.shields.io/badge/styled-components%20-%2320232a.svg?&style=for-the-badge&color=b8679e&logo=styled-components&logoColor=%3a3a3a'>
   <img style='margin: 5px;' src='https://img.shields.io/badge/axios%20-%2320232a.svg?&style=for-the-badge&color=informational'>
