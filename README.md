@@ -9,7 +9,7 @@ Check out the backend too on https://github.com/jao45gg/MyWalletBack
 
 ## About
 
-This is the Front-end of my first full-stack web application with data persistence. It's mainly mobile and made to manage money. Below are the implemented features:
+This is the Front-end of my first full-stack web application ! With data persistence ! It's mainly mobile and made to manage money. Below are the implemented features:
 
 - Sign Up
 - Login
