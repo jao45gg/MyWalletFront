@@ -1,4 +1,4 @@
-# MyWallet
+# MyWalletFront
 
 Design of a wallet manager application (for mobile) ! With the right to register, login and many libraries !
 
