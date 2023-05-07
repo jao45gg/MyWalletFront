@@ -5,7 +5,7 @@ Design of a wallet manager application (for mobile) ! With the right to register
 <img src="./src/style/assets/MyWallet.gif" />
 
 Try it out now at https://my-wallet-front-jao45gg.vercel.app <br/>
-Check out the backend too: https://github.com/jao45gg/MyWalletBack
+Check out the backend too on https://github.com/jao45gg/MyWalletBack
 
 ## About
 
