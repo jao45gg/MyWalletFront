@@ -13,6 +13,7 @@ This is the Front-end of my first full-stack web application ! With data persist
 
 - Sign Up
 - Login
+- LogOut
 - List all money that goes in and out for a user
 - Add input of money
 - Add output of money
